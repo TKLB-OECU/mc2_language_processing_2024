@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  llama2-api-server:
+    build:
+      context: llama2-api-server/.devcontainer
+      dockerfile: dockerfile
+
+      #dockerfile内で使用する変数を渡す。
+      args:
+        - http_tmp=$http_proxy
+        - https_tmp=$https_proxy
+
+    volumes:
+      - ./llama2-api-server/src:/src
+    working_dir: /src
+
+    #開発を行う為ひとまずinitを実行する。
+    command: /sbin/init
+
+    #環境変数読み込む。
+    env_file:
+      - proxy.env
+
+    #ttyとprivilegedを有効化
+    privileged: true
+    tty: true 
+
+    #ポートを開放
+    ports:
+      - "8080:8080"
