@@ -29,11 +29,6 @@
 │       │   │   ├── llama2-cpp_RAG-fastapi-standalone.py
 │       │   │   ├── llama2-cpp_RAG-fastapi.py
 │       │   │   └── modules
-│       │   │       ├── __pycache__
-│       │   │       │   ├── llama2_inference.cpython-310.pyc
-│       │   │       │   ├── vector_database.cpython-310.pyc
-│       │   │       │   ├── vector_database_create.cpython-310.pyc
-│       │   │       │   └── vector_database_upload.cpython-310.pyc
 │       │   │       ├── llama2_inference.py
 │       │   │       ├── vector_database_create.py
 │       │   │       └── vector_database_upload.py
@@ -68,11 +63,6 @@
 │       └── web_crawler
 │           ├── generate_web_to_text.py
 │           └── modules
-│               ├── __init__.py
-│               ├── __pycache__
-│               │   ├── __init__.cpython-310.pyc
-│               │   ├── url_crawl.cpython-310.pyc
-│               │   └── url_to_text.cpython-310.pyc
 │               ├── url_crawl.py
 │               └── url_to_text.py
 ├── nllb-200
