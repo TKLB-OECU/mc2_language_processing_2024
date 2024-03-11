@@ -1,9 +1,11 @@
 from modules import url_crawl
 from modules import url_to_text
 
-
+#クロール対象のURL
 target_url = "https://www.osakac.ac.jp/"
+#保存先のテキストファイルのパス
 save_text_path = "/src/text_data/OECU_official-deep4.txt"
+#クロールの深さ
 max_depth = 4
 
 url_list = url_crawl.crawl(target_url, max_depth)
